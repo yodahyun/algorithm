@@ -1,14 +1,10 @@
 def solution(num_list):
-    result = []
-    even = 0
-    odd = 0
+    result = [0,0]
     
     for i in num_list:
         if i%2==0:
-            even+=1
+            result[0]+=1
         else:
-            odd+=1
-    result.append(even)
-    result.append(odd)
+            result[1]+=1
             
     return result
