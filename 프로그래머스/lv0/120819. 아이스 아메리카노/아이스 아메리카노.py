@@ -1,11 +1,9 @@
 def solution(money):
     answer = []
-    cnt = 0
-    
-    while money>=5500: 
-        money-=5500
-        cnt+=1
+    # divmod(a,b) -> a:몫 b:나머지
         
-    answer =[cnt, money] 
+    cnt,charge = divmod(money, 5500)
+    
+    answer =[cnt, charge] 
     
     return answer
