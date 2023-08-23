@@ -4,7 +4,7 @@ def solution(array):
     array.sort()
     
     length = len(array)
-    index = (length-1)//2
+    index = length//2
     answer = array[index]
     
     return answer
